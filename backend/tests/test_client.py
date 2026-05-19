@@ -613,6 +613,9 @@ class TestStream:
                         {"type": "ai", "content": "Hello", "id": "ai-1", "usage_metadata": usage},
                     ],
                     "artifacts": [],
+                    "intent_card": None,           # ← 新增
+                    "conversation_state": None,    # ← 新增
+                    "action_decision": None, 
                 },
             ),
             ("end", {"usage": usage}),
