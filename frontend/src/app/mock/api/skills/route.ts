@@ -1,0 +1,150 @@
+export function GET() {
+  return Response.json({
+    skills: [
+      {
+        name: "deep-research",
+        description:
+          "Use this skill BEFORE any content generation task (PPT, design, articles, images, videos, reports). Provides a systematic methodology for conducting thorough, multi-angle web research to gather comprehensive information.",
+        license: null,
+        category: "public",
+        enabled: true,
+      },
+      {
+        name: "frontend-design",
+        description:
+          "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.",
+        license: "Complete terms in LICENSE.txt",
+        category: "public",
+        enabled: true,
+      },
+      {
+        name: "github-deep-research",
+        description:
+          "Conduct multi-round deep research on any GitHub Repo. Use when users request comprehensive analysis, timeline reconstruction, competitive analysis, or in-depth investigation of GitHub. Produces structured markdown reports with executive summaries, chronological timelines, metrics analysis, and Mermaid diagrams. Triggers on Github repository URL or open source projects.",
+        license: null,
+        category: "public",
+        enabled: true,
+      },
+      {
+        name: "image-generation",
+        description:
+          "Use this skill when the user requests to generate, create, imagine, or visualize images including characters, scenes, products, or any visual content. Supports structured prompts and reference images for guided generation.",
+        license: null,
+        category: "public",
+        enabled: true,
+      },
+      {
+        name: "podcast-generation",
+        description:
+          "Use this skill when the user requests to generate, create, or produce podcasts from text content. Converts written content into a two-host conversational podcast audio format with natural dialogue.",
+        license: null,
+        category: "public",
+        enabled: true,
+      },
+      {
+        name: "ppt-generation",
+        description:
+          "Use this skill when the user requests to generate, create, or make presentations (PPT/PPTX). Creates visually rich slides by generating images for each slide and composing them into a PowerPoint file.",
+        license: null,
+        category: "public",
+        enabled: true,
+      },
+      {
+        name: "skill-creator",
+        description:
+          "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+        license: "Complete terms in LICENSE.txt",
+        category: "public",
+        enabled: true,
+      },
+      {
+        name: "vercel-deploy",
+        description:
+          'Deploy applications and websites to Vercel. Use this skill when the user requests deployment actions such as "Deploy my app", "Deploy this to production", "Create a preview deployment", "Deploy and give me the link", or "Push this live". No authentication required - returns preview URL and claimable deployment link.',
+        license: null,
+        category: "public",
+        enabled: true,
+      },
+      {
+        name: "video-generation",
+        description:
+          "Use this skill when the user requests to generate, create, or imagine videos. Supports structured prompts and reference image for guided generation.",
+        license: null,
+        category: "public",
+        enabled: true,
+      },
+      {
+        name: "tutor-recommender",
+        description:
+          "根据研究方向和筛选条件推荐导师，返回匹配分、推荐理由以及论文/项目信息摘要，支持 LLM 可选增强与自动降级。",
+        license: null,
+        category: "public",
+        enabled: true,
+      },
+      {
+        name: "web-design-guidelines",
+        description:
+          'Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "audit design", "review UX", or "check my site against best practices".',
+        license: null,
+        category: "public",
+        enabled: true,
+      },
+      {
+        name: "student-mixed-exam-grading",
+        description:
+          "Orchestrate grading for mixed exam papers with multiple question types. Split by question when evidence is sufficient, route each question to the proper student grading skill, and aggregate one full-paper markdown report.",
+        license: null,
+        category: "public",
+        enabled: true,
+      },
+      {
+        name: "student-code-questions-grading",
+        description:
+          "Grade student programming or algorithm implementation answers. Outputs a teacher-readable markdown report with rubric-based scoring and actionable feedback.",
+        license: null,
+        category: "public",
+        enabled: true,
+      },
+      {
+        name: "student-concept-questions-grading",
+        description:
+          "Grade student concept, definition, short-answer, and fill-in questions with consistent scoring dimensions and markdown output.",
+        license: null,
+        category: "public",
+        enabled: true,
+      },
+      {
+        name: "student-case-questions-grading",
+        description:
+          "Grade student case-analysis answers with evidence-based reasoning checks, scoring dimensions, and actionable feedback in markdown.",
+        license: null,
+        category: "public",
+        enabled: true,
+      },
+      {
+        name: "student-essay-questions-grading",
+        description:
+          "Grade student argumentative and essay responses on thesis clarity, argument quality, depth, and academic expression.",
+        license: null,
+        category: "public",
+        enabled: true,
+      },
+      {
+        name: "student-paper-report-grading",
+        description:
+          "Grade student course papers, reports, and literature reviews across structure, citation integrity, content quality, and synthesis.",
+        license: null,
+        category: "public",
+        enabled: true,
+      },
+      {
+        name: "student-grading-feedback-revision",
+        description:
+          "Teacher natural-language regrading coordinator. Maps feedback into editable scope, controls multi-round stability, and keeps full-report readability.",
+        license: null,
+        category: "public",
+        enabled: true,
+      },
+    ],
+  });
+}
